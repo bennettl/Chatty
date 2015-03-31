@@ -1,6 +1,5 @@
 var chatApp = angular.module('chatApp', ['ngAnimate', 'ngResource']);
 
-
 /*
  ____                  _               
 / ___|  ___ _ ____   _(_) ___ ___  ___ 
@@ -137,34 +136,3 @@ chatApp.filter('fromNow', function(){
         return moment(new Date(input)).fromNow();
     }
 });
-
-chatApp.controller('ChatRoomCtrl', ['$scope', function($scope){
-    
-    // $scope.rooms = ['weggweweg', 'wegwgegwgw', 'wegwegweg'];
-
-    // $scope.onChatRoomCreate = function(room){
-
-    // };
-}]);
-
-chatApp.controller('ChatMessageCtrl', ['$scope', function($scope){
-    
-    // $scope.messages = [];
-    
-
-    // socket.on('chat message', function(msg){
-    //     // Validation on dubplicat message
-    //     $scope.messages.push(msg);
-    // });
-
-
-    //     // Emit an event
-    //     socket.emit('messageCreate', $scope.chatMessage);
-
-    //     $scope.chatMessage = '';
-    //     return false;
-    // };
-
-    
-}]);
-
